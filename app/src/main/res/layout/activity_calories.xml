@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".CaloriesActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textView_breakfast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/breakfast"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editText_breakfast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_breakfast"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:ems="10"
+            android:hint="@string/meal_calories"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/textView_morning_snack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_breakfast"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/morning_snack"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:id="@+id/editText_morning_snack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_morning_snack"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:ems="10"
+            android:hint="@string/meal_calories"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/textView_lunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_morning_snack"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/lunch"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:id="@+id/editText_lunch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_lunch"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:ems="10"
+            android:hint="@string/meal_calories"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/textView_afternoon_snack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_lunch"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/afternoon_snack"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:id="@+id/editText_afternoon_snack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_afternoon_snack"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:ems="10"
+            android:hint="@string/meal_calories"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/textView_dinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_afternoon_snack"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/dinner"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:id="@+id/editText_dinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_dinner"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:ems="10"
+            android:hint="@string/meal_calories"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/textView_evening_snack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_dinner"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/evening_snack"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:id="@+id/editText_evening_snack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_evening_snack"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:ems="10"
+            android:hint="@string/meal_calories"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/button_launch_graphs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText_evening_snack"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:hint="@string/button_launch_graphs"
+            android:onClick="buttonLaunchGraphsOnClick" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

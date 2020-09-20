@@ -1,0 +1,38 @@
+<html>
+<head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawVisualization);
+
+      function drawVisualization() {
+        // Some raw data (not necessarily accurate)
+        var data = google.visualization.arrayToDataTable([
+          [android.getMealTitle(),    android.getIntakeTitle(),     android.getRecommendedTitle()],
+          [android.getBreakfastTitle(),        android.getIntakeBreakfast(),        android.getRecommendedBreakfast()],
+          [android.getMorningSnackTitle(), android.getIntakeMorningSnack(), android.getRecommendedMorningSnack()],
+          [android.getLunchTitle(),      android.getIntakeLunch(),      android.getRecommendedLunch()],
+          [android.getAfternoonSnackTitle(), android.getIntakeAfternoonSnack(), android.getRecommendedAfternoonSnack()],
+          [android.getDinnerTitle(),      android.getIntakeDinner(),      android.getRecommendedDinner()],
+          [android.getEveningSnackTitle(), android.getIntakeEveningSnack(), android.getRecommendedEveningSnack()]
+        ]);
+
+        var options = {
+          title : 'Intake/Recommended Calories',
+          vAxis: {title: android.getCaloriesTitle()},
+          hAxis: {title: android.getMealTitle()},
+          seriesType: 'bars',
+          series: {1: {type: 'line'}},
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+
+    </script>
+</head>
+<body>
+<div id="chart_div" style="width: 100%; height: 100%;"></div>
+</body>
+</html>

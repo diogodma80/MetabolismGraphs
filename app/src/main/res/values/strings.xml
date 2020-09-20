@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Metabolism Graphs</string>
+    <string name="textView_sex">Sex</string>
+    <string name="radioButton_female">Female</string>
+    <string name="radioButton_male">Male</string>
+    <string name="textView_age">Age</string>
+    <string name="editText_age">Inform your age</string>
+    <string name="textView_weight">Weight</string>
+    <string name="editText_weight">Input your weight in kg</string>
+    <string name="textView_height">Height</string>
+    <string name="editText_height">Input your height in cm</string>
+    <string name="textView_activity_level">Input Activity Level</string>
+    <string name="button_calories">Input Calorie Intake</string>
+    <string name="title_activity_metabolic_level">Basal Metabolic Level</string>
+    <string name="invalid_age">Inform a valid age</string>
+    <string name="invalid_weight">Inform a valid weight</string>
+    <string name="invalid_height">Inform a valid height</string>
+    <string name="input_age">Inform your age</string>
+    <string name="input_weight">Input your weight</string>
+    <string name="input_height">Input your height</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="meal_calories">Inform the calory intake of this meal</string>
+    <string name="morning_snack">Morning Snack</string>
+    <string name="lunch">Lunch</string>
+    <string name="afternoon_snack">Afternoon Snack</string>
+    <string name="dinner">Dinner</string>
+    <string name="button_launch_graphs">Launch Graphs</string>
+    <string name="evening_snack">Evening Snack</string>
+    <string name="invalid_calory_input">"Invalid calorie input for "</string>
+    <string name="title_activity_graphs">Choose the graph type</string>
+    <string name="bar_graph">Choose the graph type</string>
+    <string name="pizza_graph">Calorie intake x recommended intake</string>
+    <string name="meal">Meal</string>
+    <string name="calories">Calories</string>
+    <string name="intake">Intake</string>
+    <string name="recommended">Recommended</string>
+</resources>
